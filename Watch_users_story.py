@@ -60,7 +60,7 @@ while True:
             current_user_id = user_to_get_likers_of
             bot.logger.info("Sleeping and returning back to original user_id=%s" % current_user_id)
             time.sleep(90 * random.random() + 60)
-        if b == len(lines):
+        if b >= len(lines):
             print('Завершение программы, весь список пройден')
             break
 
